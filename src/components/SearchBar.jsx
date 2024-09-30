@@ -97,7 +97,7 @@ const SearchBar = () => {
                                     {filteredProducts.length > 0 ? (
                                         filteredProducts.map(product => (
                                             <li key={product.id} className="py-2 border-b last:border-b-0">
-                                                <Link prefetch={false} href={`/${product.id}`} className="block hover:bg-gray-100 px-2 py-1 rounded">
+                                                <Link prefetch={false} href={`/product/${product.id}`} className="block hover:bg-gray-100 px-2 py-1 rounded">
                                                     {product.name}
                                                 </Link>
                                             </li>
